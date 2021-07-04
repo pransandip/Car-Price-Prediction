@@ -1,0 +1,38 @@
+<html>
+<h1>Final Price </h1>
+<style>
+    #customers {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 30%;
+    }
+
+    #customers td,
+    #customers th {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+
+    #customers tr:hover {
+        background-color: #ddd;
+    }
+
+    #customers th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #04AA6D;
+        color: white;
+    }
+</style>
+
+<body>
+    <table id="customers">
+        <tr>
+            <th>{{ prediction_text }}</th>
+            <td>{{ price }} {{ 'L' }}</td>
+        </tr>
+    </table>
+</body>
+
+</html>

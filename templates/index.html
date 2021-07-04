@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <h1>&emsp;Car Price Predictive Analysis 🚗</h1>
+    <div>
+        <form action="/submit" method='post'>
+            <label for="Year">Year:</label><br>
+            <input type="text" id="Year" name="Year" placeholder="0" type="number"><br><br>
+            <label for="Present_Price">What is the Showroom Price?(In lakhs):</label><br>
+            <input type="text" id="Present_Price" name="Present_Price" placeholder="0" type="number"
+                required="required"><br><br>
+            <label for="Kms_Driven">How Many Kilometers Drived?</label><br>
+            <input type="text" id="Kms_Driven" name="Kms_Driven" placeholder="0" type="number"
+                required="required"><br><br>
+            <label for="Owner">How many owners previously had the car(0 or 1 or 3) ?</label><br>
+            <input type="text" id="Owner" name="Owner" placeholder="0" required="required"><br><br>
+            <label for="Fuel_Type_Petrol">What Is the Fuel type ?</label><br>
+            <select name="Fuel_Type_Petrol" id="Fuel_Type_Petrol" required="required">
+                <option value="Petrol">Petrol</option>
+                <option value="Diesel">Diesel</option>
+                <option value="CNG">CNG</option>
+            </select><br><br>
+            <label for="Seller_Type_Individual">Are you a Dealer or Individual ?</label><br>
+            <select name="Seller_Type_Individual" id="Seller_Type_Individual" required="required">
+                <option value="Dealer">Dealer</option>
+                <option value="Individual">Individual</option>
+            </select><br><br>
+            <label for="Transmission_Mannual">Transmission type:</label><br>
+            <select name="Transmission_Mannual" id="Transmission_Mannual" required="required">
+                <option value="Mannual">Manual Car</option>
+                <option value="Automatic">Automatic Car</option>
+            </select><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <p>&emsp;&emsp;click the "Submit" button, to check selling price of this car.</p>
+
+</body>
+
+</html>
