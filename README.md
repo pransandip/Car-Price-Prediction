@@ -1,2 +1,2 @@
 # Car-Price-Prediction
-Second hand Car Prices Prediction: Advanced Regression Techniques
+Second hand Car Prices Prediction: Prices Predictive Analysis
